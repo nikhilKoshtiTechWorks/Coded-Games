@@ -1,4 +1,3 @@
-package Java_Games;
 import java.util.Scanner;
 
 public class ticTacToe {
@@ -81,6 +80,7 @@ public class ticTacToe {
         for(int i = 0; i<array.length; i++){
             for(int j = 0; j<array.length; j++){
                 if((i+j)%2==0){
+                    printArray(array);
                     System.out.print("Give co-ordiantes of 'X':");
                     x = scan.nextInt();
                     y = scan.nextInt();
@@ -93,6 +93,7 @@ public class ticTacToe {
                     }
                     
                 } else {
+                    printArray(array);
                     System.out.print("Give co-ordiantes of 'O':");
                     x = scan.nextInt();
                     y = scan.nextInt();
